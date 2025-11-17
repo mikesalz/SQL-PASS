@@ -18,9 +18,9 @@ jobs:
       with:
         dotnet-version: 8.0.x
     - name: Restore dependencies
-      run: dotnet restore Wingtips/Wingtips.sqlproj
+      run: dotnet restore Wingtips/DatabaseProjectdb-pass-test-10.sqlproj
     - name: Build
-      run: dotnet build Wingtips/Wingtips.sqlproj --no-restore
+      run: dotnet build Wingtips/DatabaseProjectdb-pass-test-10.sqlproj --no-restore
     - name: Publish SQL project
       run: |
-        sqlpackage /Action:Publish /SourceFile:Wingtips/bin/Debug/Wingtips.dacpac /TargetConnectionString:${{ secrets.SQL_CONNECTION_STRING }}
+        sqlpackage /Action:Publish /SourceFile:Wingtips/bin/Debug/DatabaseProjectdb-pass-test-10.dacpac /TargetConnectionString:${{ secrets.SQL_CONNECTION_STRING }}
