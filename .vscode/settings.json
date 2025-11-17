@@ -1,0 +1,8 @@
+{
+    "dataworkspace.excludedProjects": [
+        "WingtipsWorkshop_New/WingtipsWorkshop_New.sqlproj",
+        "WingtipsWorkshop/WingtipsWorkshop.sqlproj",
+        "WingtipsWorkshop/WingtipsWorkshop_New.sqlproj",
+        "WingtipsWorkshop/WingtipsWorkshop/WingtipsWorkshop.sqlproj"
+    ]
+}
